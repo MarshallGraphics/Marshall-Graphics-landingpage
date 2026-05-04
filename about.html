@@ -1,0 +1,213 @@
+<!-- ABOUT PREVIEW -->
+
+<!-- ===================== about.html (PREMIUM VERSION) ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Marshall Graphics</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --black:#000;
+      --dark:#0e0e0e;
+      --primary:#ff7a00;
+      --accent:#ff0055;
+      --secondary:#0077ff;
+      --white:#fff;
+      --gray:#bfbfbf;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:var(--black);
+      color:var(--white);
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 60px;
+      background:rgba(0,0,0,0.85);
+      backdrop-filter:blur(10px);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+    header img{height:45px}
+
+    nav a{
+      margin-left:25px;
+      text-decoration:none;
+      color:var(--white);
+      font-weight:500;
+      position:relative;
+    }
+
+    nav a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-5px;
+      width:0;
+      height:2px;
+      background:linear-gradient(90deg,var(--primary),var(--accent),var(--secondary));
+      transition:0.3s;
+    }
+
+    nav a:hover::after{
+      width:100%;
+    }
+
+    .hero{
+      padding:100px 20px;
+      text-align:center;
+      background:radial-gradient(circle at top,#111,#000);
+    }
+
+    .hero h1{
+      font-size:3rem;
+      background:linear-gradient(90deg,var(--primary),var(--accent),var(--secondary));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero p{
+      margin-top:15px;
+      color:var(--gray);
+      max-width:700px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    section{
+      padding:80px 60px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:var(--dark);
+      padding:25px;
+      border-radius:15px;
+      transition:0.3s;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      border:1px solid rgba(255,122,0,0.4);
+    }
+
+    .card h3{
+      color:var(--primary);
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:var(--gray);
+      line-height:1.6;
+      font-size:14px;
+    }
+
+    .about-text{
+      max-width:900px;
+      margin:auto;
+      text-align:center;
+      color:var(--gray);
+      line-height:1.8;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#0a0a0a;
+      color:var(--gray);
+    }
+
+    @media(max-width:768px){
+      header{padding:20px}
+      section{padding:60px 20px}
+      .hero h1{font-size:2.2rem}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Marshall Graphics">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>About Marshall Graphics</h1>
+  <p>We are a creative digital agency focused on delivering impactful design, development, and marketing solutions that help brands grow online.</p>
+</section>
+
+<section>
+  <div class="about-text">
+    Marshall Graphics was built with a vision to transform ideas into powerful digital experiences. We combine creativity, strategy, and technology to deliver solutions that help businesses stand out in a competitive digital world. From startups to established brands, we focus on quality, consistency, and client satisfaction in every project we handle.
+  </div>
+</section>
+
+<section>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>To empower businesses with creative and effective digital solutions that drive growth and visibility.</p>
+    </div>
+
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>To become a leading digital agency recognized for innovation, creativity, and excellence in service delivery.</p>
+    </div>
+
+    <div class="card">
+      <h3>Our Values</h3>
+      <p>Creativity, professionalism, integrity, innovation, and customer satisfaction guide everything we do.</p>
+    </div>
+
+    <div class="card">
+      <h3>Why We Stand Out</h3>
+      <p>We don’t just deliver projects — we build experiences that connect brands with their audience.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Marshall Graphics | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+<section>
+  <div class="title">
+    <h2>About Us</h2>
+  </div>
+  <p class="about">
+    Marshall Graphics is a creative digital agency dedicated to delivering high-quality services across design, development, and digital marketing. We combine creativity with strategy to help businesses grow and succeed in the digital world.
+  </p>
+</section>
