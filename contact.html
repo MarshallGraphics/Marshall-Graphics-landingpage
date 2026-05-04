@@ -1,0 +1,329 @@
+<!-- ===================== contact.html (PREMIUM VERSION) ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Marshall Graphics</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --black:#000;
+      --dark:#0e0e0e;
+      --primary:#ff7a00;
+      --accent:#ff0055;
+      --secondary:#0077ff;
+      --white:#fff;
+      --gray:#bfbfbf;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:var(--black);
+      color:var(--white);
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 60px;
+      background:rgba(0,0,0,0.85);
+      backdrop-filter:blur(10px);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+    header img{height:45px}
+
+    nav a{
+      margin-left:25px;
+      text-decoration:none;
+      color:var(--white);
+      font-weight:500;
+      position:relative;
+    }
+
+    nav a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-5px;
+      width:0;
+      height:2px;
+      background:linear-gradient(90deg,var(--primary),var(--accent),var(--secondary));
+      transition:0.3s;
+    }
+
+    nav a:hover::after{
+      width:100%;
+    }
+
+    .hero{
+      padding:100px 20px;
+      text-align:center;
+      background:radial-gradient(circle at top,#111,#000);
+    }
+
+    .hero h1{
+      font-size:3rem;
+      background:linear-gradient(90deg,var(--primary),var(--accent),var(--secondary));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero p{
+      margin-top:15px;
+      color:var(--gray);
+      max-width:700px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    section{
+      padding:80px 60px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:var(--dark);
+      padding:25px;
+      border-radius:15px;
+      border:1px solid rgba(255,255,255,0.05);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      border:1px solid rgba(255,122,0,0.4);
+      box-shadow:0 0 20px rgba(255,122,0,0.1);
+    }
+
+    .card h3{
+      color:var(--primary);
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:var(--gray);
+      font-size:14px;
+      line-height:1.7;
+    }
+
+    .highlight{
+      color:var(--secondary);
+      font-weight:500;
+    }
+
+    .contact-box{
+      max-width:900px;
+      margin:auto;
+      text-align:center;
+      color:var(--gray);
+      line-height:1.8;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:15px;
+      padding:10px 20px;
+      border-radius:25px;
+      background:linear-gradient(90deg,var(--primary),var(--accent));
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#0a0a0a;
+      color:var(--gray);
+    }
+
+    @media(max-width:768px){
+      header{padding:20px}
+      section{padding:60px 20px}
+      .hero h1{font-size:2.2rem}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="/Public/images:logo.png" width="50" height="150">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Contact Us</h1>
+  <p>Let’s work together and bring your ideas to life. Reach out to us through any of the channels below.</p>
+</section>
+
+<section>
+  <section class="section">
+  <div class="title">
+    <h2>Connect With Us</h2>
+    <p class="section-sub">Follow and engage with Marshall Graphics on social media</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- FACEBOOK -->
+    <div class="card">
+      <h3>Facebook</h3>
+      <p>Marshall Graphicals</p>
+      <a href="https://www.facebook.com/share/1CiXhqcVGG/" target="_blank" class="btn">Visit Page</a>
+    </div>
+
+    <!-- TIKTOK -->
+    <div class="card">
+      <h3>TikTok</h3>
+      <p>@marshallgraphics_49</p>
+      <a href="https://www.tiktok.com/@marshallgraphics_49?_r=1&_t=ZS-964xzJpWZ3o" target="_blank" class="btn">Open TikTok</a>
+    </div>
+
+    <!-- INSTAGRAM -->
+    <div class="card">
+      <h3>Instagram</h3>
+      <p>@marshall.graphics</p>
+      <a href="https://www.instagram.com/marshall.graphics?igsh=MWl3aG93MGdsaDJiMw==" target="_blank" class="btn">View Profile</a>
+    </div>
+
+    <!-- TWITTER / X -->
+    <div class="card">
+      <h3>Twitter (X)</h3>
+      <p>@marshke_49</p>
+      <a href="https://x.com/marshke_49" target="_blank" class="btn">Visit Profile</a>
+    </div>
+
+  </div>
+</section>
+
+  </div>
+</section>
+
+<section>
+  <div class="contact-box">
+    <h2 style="color:white;margin-bottom:10px;">Let’s Build Something Great</h2>
+    <p>
+      Whether you need branding, a website, or digital marketing — Marshall Graphics is ready to help you grow your business professionally and creatively.
+    </p>
+  </div>
+</section>
+<section>
+  <div class="title">
+    <h2>Book a Service</h2>
+  </div>
+
+  <form action="https://formsubmit.co/graphicsmarshall20@gmail.com" method="POST" class="booking-form">
+    
+    <input type="text" name="name" placeholder="Your Full Name" required>
+
+    <input type="email" name="email" placeholder="Your Email Address" required>
+
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    
+    <input type="text" name="location" placeholder="Your Location (Town / Area)" required>
+
+<input type="text" name="address" placeholder="Exact Address / Landmark">
+
+<input type="url" name="map" placeholder="Google Maps Link (Optional)">
+
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option>Graphic Design</option>
+      <option>Web Development</option>
+      <option>Virtual Assistance</option>
+      <option>Data Entry & Management</option>
+      <option>Data Analysis</option>
+      <option>Social Media Marketing</option>
+    </select>
+
+    <input type="date" name="date" required>
+
+    <textarea name="message" placeholder="Project details..." rows="4"></textarea>
+
+    <button type="submit" class="btn">Book Now</button>
+
+  </form>
+</section>
+<style>
+  .booking-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #111;
+  color: #fff;
+  outline: none;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus,
+.booking-form select:focus {
+  border: 1px solid #ff7a00;
+}
+
+.booking-form button {
+  align-self: center;
+}
+</style>
+<script>
+  <script>
+function sendToWhatsApp() {
+  let name = document.querySelector('input[name="name"]').value;
+  let email = document.querySelector('input[name="email"]').value;
+  let phone = document.querySelector('input[name="phone"]').value;
+  let service = document.querySelector('select[name="service"]').value;
+  let date = document.querySelector('input[name="date"]').value;
+  let message = document.querySelector('textarea[name="message"]').value;
+
+  let whatsappMessage = `Hello Marshall Graphics,%0A%0AI would like to book a service:%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AService: ${service}%0ADate: ${date}%0AMessage: ${message}`;
+
+  let url = `https://wa.me/254117262555?text=${whatsappMessage}`;
+
+  window.open(url, '_blank');
+}
+</script>
+</script>
+<footer>
+  <p>© 2026 Marshall Graphics | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
